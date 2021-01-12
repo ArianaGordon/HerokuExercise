@@ -1,1 +1,1 @@
-ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+web: gunicorn InferenceServer:app
