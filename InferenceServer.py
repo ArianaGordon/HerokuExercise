@@ -3,6 +3,7 @@ from pickle import load
 import numpy as np
 import pandas as pd
 import json
+import os
 
 # Create flask application
 app = Flask(__name__)
@@ -48,4 +49,5 @@ def predict_multi():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = os.environ.get('PORT')
+    app.run(host='0.0.0.0', port=int(port))
