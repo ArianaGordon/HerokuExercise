@@ -37,7 +37,7 @@ def predict_single():
 def predict_multi():
     # Load data from json object
     data = request.json
-    df = pd.read_json(data)
+    df = pd.read_json(eval(data))
 
     # Open file containing model
     with open('gnb_heart.pkl', 'rb') as input_file:
