@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import json
 import os
+import sklearn
 
 # Create flask application
 app = Flask(__name__)
