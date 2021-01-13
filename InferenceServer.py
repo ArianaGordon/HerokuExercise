@@ -29,7 +29,7 @@ def predict_single():
     thal = request.args.get('thal')
     array = np.reshape([age, sex, cp, trestbps, chol, fbs, restecg, thalach,
                         exang, oldpeak, slope, ca, thal], (1, -1))
-    result = gnb.predict(array)
+    result = gnb.predict(array.astype(float))
     return str(result)
 
 
